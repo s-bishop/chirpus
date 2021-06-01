@@ -1,0 +1,157 @@
+/*
+-Properly link style.css in the head of the HTML file.
+-Properly link the “Open Sans” font in the head of the HTML file.
+-Properly use “Open Sans” in the style.css file.
+-The background color of the body should be set to #f9fafc.
+-Use #69696a for the colors that look gray.
+-Use #000 for colors that look black.
+-Use #FFF for the “Hire Us” and “Call To Action” text.
+-Remove text-decoration from anchor tags.
+-Border-left of Lorem ipsum is implemented
+-Footer is implemented using position fixed
+-Footer has a background color of: rgba(247, 193, 162, 0.7);
+-Write a media query using min-width syntax to change styles at 768px.
+-Flex properties are used to change the layout of the navigation from column to row.
+-A flex property is used to separate “chirpus inc” and the navigation items.
+-The lorem ipsum section takes up half the width of the page.
+-Use rgba(247, 136, 167, 0.6) for the largest circle.
+-Use rgba(247, 193, 162, 0.7) for the medium sized circle.
+-Use rgba(207, 130, 213, 0.6) for the smallest circle.
+-Use a combination of position, top, right, bottom, and/or left to position the circles on the page. (you don’t have to use them all)
+-Circles have fixed widths and heights.
+-Circles should not be displayed in the mobile view.*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    background-color: #f9fafc;
+}
+
+header {
+    margin: 8px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+.navTwo {
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: medium;
+}
+
+.chipusText {
+    color: #000;
+}
+
+div {
+    margin: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    color: #fff;
+    background-color: #000;
+    width: 100%;
+    height: 40px;
+    border-radius: 30px; 
+
+}
+
+p {
+    color: #69696a;
+    width: 95%;
+    border-left-style: solid;
+    padding-left: 20px;
+    border-color: #69696a;
+}
+
+footer {
+    background-color: rgba(247, 193, 162, 0.7); 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h3 {
+    margin-left: 8px;
+}
+
+.listTwo {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (min-width: 768px) {
+    p {
+        width: 50%;
+}
+
+.buttonTwo {
+    width: 50%;
+}
+
+.listOne {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 175px;
+ }
+
+ header {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 89%;
+ }
+
+ .buttonOne {
+     width: 8%;
+     position: fixed;
+     top: 15px;
+     right: 10px;
+ }
+
+ body {
+     height: 750px;
+ }
+.child {
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+}
+
+#largeCircle {
+    top: 220px;
+    right: 80px;
+    width: 163px;
+    height: 163px;
+    background-color: rgba(247, 136, 167, 0.6);
+}
+
+#mediumCircle {
+    top: 310px;
+    right: 30px;
+    width: 123px;
+    height: 123px;
+    background-color: rgba(247, 193, 162, 0.7);
+}
+
+#smallCircle {
+    top: 250px;
+    right: 30px;
+    width: 90px;
+    height: 90px;
+    background-color: rgba(207, 130, 213, 0.6);
+}
+
+}
